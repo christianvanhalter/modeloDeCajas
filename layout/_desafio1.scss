@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  margin: 5px;
+  white-space: nowrap;
+}
+
+.box {
+  height: 100px;
+  width: 25%;
+  padding: 5px;
+  box-sizing: border-box;
+  white-space: normal;
+  float: left;
+}
+
+nav {
+  background: green;
+  position: fixed;
+}

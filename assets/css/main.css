@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  margin: 5px;
+  white-space: nowrap;
+}
+
+.box {
+  height: 100px;
+  width: 25%;
+  padding: 5px;
+  box-sizing: border-box;
+  white-space: normal;
+  float: left;
+}
+
+nav {
+  background: green;
+  position: fixed;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.square {
+  height: 200px;
+  width: 200px;
+}
+
+.square__red {
+  background-color: rgba(255, 0, 0, 0.5);
+  position: absolute;
+  z-index: 3;
+}
+
+.square__green {
+  background-color: rgba(0, 255, 0, 0.5);
+  left: 25px;
+  position: absolute;
+  top: 25px;
+  z-index: 2;
+}
+
+.square__blue {
+  background-color: rgba(0, 0, 255, 0.5);
+  left: 50px;
+  position: absolute;
+  top: 50px;
+  z-index: 1;
+}
+
+.bandera {
+  width: 400px;
+  height: 250px;
+  position: relative;
+  display: inline-block;
+  border: solid 1px black;
+}
+
+#espana,
+#emiratos,
+#dinamarca {
+  background-color: red;
+}
+
+#espana div {
+  height: 33.3%;
+  width: 100%;
+  background: yellow;
+  position: absolute;
+  top: 33.3%;
+}
+
+#emiratos div:nth-child(1) {
+  height: 33.3%;
+  width: 75%;
+  background: green;
+  position: absolute;
+  left: 25%;
+  top: 0;
+}
+
+#emiratos div:nth-child(2) {
+  height: 33.3%;
+  width: 75%;
+  background: white;
+  position: absolute;
+  left: 25%;
+  top: 33.3%;
+}
+
+#emiratos div:nth-child(3) {
+  position: absolute;
+  width: 75%;
+  height: 33.3%;
+  left: 25%;
+  top: 66.6%;
+  background: black;
+}
+
+#dinamarca div:nth-child(1) {
+  width: 10%;
+  position: absolute;
+  height: 100%;
+  left: 30%;
+  background: white;
+}
+
+#dinamarca div:nth-child(2) {
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  background: white;
+  top: 45%;
+}
+
+#japon div {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+/*# sourceMappingURL=main.css.map */

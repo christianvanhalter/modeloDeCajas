@@ -1,0 +1,53 @@
+.bandera {
+  width: 400px;
+  height: 250px;
+  position: relative;
+  display: inline-block;
+  border: solid 1px black;
+}
+#espana,
+#emiratos,
+#dinamarca {
+  background: red;
+}
+@mixin formato($position, $height: 0, $width: 0, $top: 0, $background, $left) {
+  position: $position;
+  height: $height;
+  width: $width;
+  top: $top;
+  background: $background;
+  left: $left;
+}
+#espana div {
+  @include formato(relative, 33.3%, 100%, 33.3%, yellow, 0%);
+}
+
+#emiratos div:nth-child(1) {
+  @include formato(absolute, 33.3%, 75%, 0%, green, 25%);
+}
+
+#emiratos div:nth-child(2) {
+  @include formato(absolute, 33.3%, 75%, 33.3%, white, 25%);
+}
+
+#emiratos div:nth-child(3) {
+  @include formato(absolute, 33.3%, 75%, 66.6%, black, 25%);
+}
+
+#dinamarca div:nth-child(1) {
+  @include formato(absolute, 100%, 7.5%, 0%, white, 25%);
+}
+
+#dinamarca div:nth-child(2) {
+  @include formato(absolute, 10%, 100%, 45%, white, 0%);
+}
+
+#japon div {
+  @include formato(absolute, 70px, 70px, 0%, red, 0%);
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
